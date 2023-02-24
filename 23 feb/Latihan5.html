@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opertator pada JS</title>
+</head>
+<body>
+    <p>Latihan Operator JS</p>
+    <script type="text/Javascript">
+        var aku = 20;
+        var kamu = 15;
+
+        var benar = aku > kamu;
+        var salah = aku < kamu;
+
+        //sama dengan //true
+        var hasil = aku == kamu;
+        document.write(`${aku} == ${kamu} = ${hasil} <br>`);
+
+        //lebih besar
+        var hasil = aku > kamu;
+        document.write(`${aku} > ${kamu} = ${hasil} <br>`);
+        
+        //lebih besar atau sama dengan
+        var hasil = aku >= kamu;
+        document.write(`${aku} >= ${kamu} = ${hasil} <br>`);
+
+        //lebih kecil
+        var hasil = aku < kamu;
+        document.write(`${aku} < ${kamu} = ${hasil} <br>`);
+
+        //lebih kecil atau sama dengan
+        var hasil = aku <= kamu;
+        document.write(`${aku} <= ${kamu} = ${hasil} <br>`);
+
+        //operator and
+        var hasil = benar && salah;
+        document.write(`${benar} <= ${salah} = ${hasil} <br>`);
+
+         //operator or
+         var hasil = benar || salah;
+        document.write(`${Benar} || ${salah} = ${hasil} <br>`);
+
+         //operator not
+         var hasil = !benar;
+        document.write(`!${Benar} <= ${salah} = ${hasil} <br>`);
+    </script>
+    
+</body>
+</html>
