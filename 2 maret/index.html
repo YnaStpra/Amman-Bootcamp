@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Pemanggilan ID</title>
+    <style type="text/css">
+        #register_button{
+            background: red;
+            color: white;
+            padding: 8px;
+        }
+        #login_button{
+            background: seagreen;
+            color: white;
+            padding: 8px;
+        }
+    </style> 
+</head>
+<body>
+    <button id="login_button">Log In</button>
+    <button>Log Out</button>
+    <button id="register_button">Register</button>
+    <script type="text/javascript">
+        const registerbutton = document.querySelector('#register_button')
+        registerbutton.addEventListener('click',() => {alert ('Tombol Merah sedang diklik!')})
+        const loginbutton = document.querySelector('#login_button')
+        loginbutton.addEventListener('click',() => {alert ('Tombol Hijau sedang diklik!')})
+    </script>
+    
+</body>
+</html>

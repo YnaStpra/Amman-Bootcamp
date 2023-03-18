@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laihan Pemanggilan Class</title>
+    <style type="text/css">
+        .btn{
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .red{
+            color: red;
+        }
+        .bg-red{
+            background-color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        .bg-blue{
+            background-color: blue;
+        }
+        .white{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn bg-red white">Merah</button>
+    <button class="btn red">Putih Merah</button>
+    <button class="btn bg-blue white">Biru</button>
+    <button class="btn blue">Putih Biru</button>
+
+    <button class="tombol">Dikllik<span class="Hasil">0</span>kali</button>
+    <script type="text/javascript">
+        const tombol = document.querySelector('.tombol')
+        const hasil = tombol.querySelector('.hasil')
+
+        tombol.addEventListener('click', () => {hasil.innerHTML = parseInt(hasil.innerHTML)+1})
+    </script>
+</body>
+</html>
